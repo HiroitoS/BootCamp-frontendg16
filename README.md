@@ -17,3 +17,7 @@ Este repositorio nos sirve para aprender el flujo de trabajo de Git y Github
 * git remote remove origin
 * git push 
 * git pull
+* checkout ejemplo
+* git checkout -b ejemplo
+* git switch -c ejemplo2
+* git remove
