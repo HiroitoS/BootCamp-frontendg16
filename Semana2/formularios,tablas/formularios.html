@@ -157,6 +157,37 @@
             <br>
             <input type="submit" value="Guardar">
         </form>
+        <form action="">
+            <h2>Validaciones</h2>
+            <label for="">
+                Nombre
+                <input type="text" name="nombre" minlength="3" maxlength="15" required>
+            </label>
+            <label for="">
+                Email
+                <input type="email" name="email" required>
+            </label>
+            <label for="">
+                <input type="number" name="edad" required min="1" max="99">
+            </label>
+            <label for="">
+                Teléfono
+                <input type="tel" name="telefono" required placeholder="+5199999999
+                999" pattern="\+[0-9]{2} [0-9]{9}">
+            </label>
+            <label for="">
+                Comidas
+                <select name="comida" id="" required>
+                    <option value="">Selecciona tu comida favorita..</option>
+                    <option value="fr">Francesa</option>
+                    <option value="it">Italiana</option>
+                    <option value="jp">Japonesa</option>
+                    <option value="pe">Peruana</option>
+                    <option value="th">Tailandesa</option>
+                </select>
+            </label>
+            <input type="submit" value="Guardar">
+        </form>
     </main>
 </body>
 </html>
