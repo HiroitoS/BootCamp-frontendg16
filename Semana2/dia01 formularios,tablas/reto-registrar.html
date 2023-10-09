@@ -11,33 +11,76 @@
   <!-- TODO: Crear un formulario para crear una cuenta de usuario con los campos nombres, 
     apellidos, email, telefono, password, confirmar password(caja de texto), si gustan pueden agregar más 
     campos. Y un botón llamado registrarse. OPcionalmente pueden usar el framework PICO que vimos en clase. -->
-    <main class="container">
-      <h1>Formulario de Registro</h1>
-      <form action="">        
-        <label for="text1"> Nombres:</label>
-        <input type="text" id="text1" name="texto" required><br>
-        <label for="text1"> Apellidos:</label>
-        <input type="text" id="text1" name="texto" required><br>
-        <label for="text1"> Email:</label>
-        <input type="email" placeholder="Ejm. hitoito.sanchez@gmail.com" id="text1" name="texto" required><br>
-        <label for="text1"> Teléfono:</label>
-        <input type="tel" placeholder="(064)999999" id="text1" name="texto"><hr>
-        <h2>Genere su contraseña</h2>
-        <label for="text1">Contraseña:</label>
-        <input type="password" maxlength="8">
-        <label for="text1">Confirme su contraseña:</label>
-        <input type="password" required><br>
-        <input type="submit" value="Registrarse"> <br>
-        <input type="reset" value="Limpiar"> 
-        <ul>
-            <li>Contraseña debe contener 8 caracteres</li>
-            <li>Su contraseña debe contener Mayúsculas y números</li>
-            <li>Evite generar contraseñas con su nro de DNI o fechas de cumpleaños</li>
-        </ul>
-      </form>
-      
-    </main>
-
     
+    <main class="container">
+      <div>
+        <h1 style="margin: 0">Crear una cuenta</h1>
+        <h6 style="font-weight: lighter;">Ingrese la siguiente información para registrarte.</h6>
+      </div>
+      <form action="">  
+        <div style="display:flex;">
+          <div>
+            <label for="text1"> Nombres:</label>
+            <input type="text" id="text1" name="texto" required>
+          </div>
+          <div style="margin-left: 50px;">
+            <label for="text1"> Apellidos:</label>
+            <input type="text" id="text1" name="texto" required>
+          </div>
+        </div>      
+        <div>
+          <label for="text1"> Edad</label>
+          <input type="number" placeholder="Ejm. 20" id="text1" name="texto" required min="1" max="100">
+        </div>        
+        <div>
+          <label for="text1">Fecha de Nacimiento</label>
+        <input type="date" id="text1" name="texto"><hr>
+        </div>
+        <div>
+          <label for="text1">
+            Género
+            <select name="genero" id="genero">
+              <option value="Ingrese">Seleccione su género</option>
+              <option value="Masculino">Masculino</option>
+              <option value="Femenino">Femenino</option>
+              <option value="otros">Otros</option>
+            </select>
+          </label>          
+        </div>
+        <div>
+          <label for="text1">Email</label>
+          <input type="email" placeholder="Ejem: user@gmail.com" required>
+        </div>
+        <div>
+          <label for="text1">Dirección</label>
+          <input type="text" placeholder="Dirección">
+          <input type="text1" placeholder="Dirección línea2">
+        </div>
+        <div>
+          <label for="text1">Teléfono</label>
+          <input type="tel" placeholder="Número de teléfono">
+        </div>
+        <div>
+          <label for="text1">Código postal</label>
+          <input type="number" placeholder="Ej: 14001" max="5">
+        </div>
+        <div>
+          <label for="text1">Ciudad</label>
+          <input type="text" placeholder="Ej: Huancayo">
+        </div>
+        <div>
+          <label for="text1">Subir firma</label>
+          <input type="file" accept=".jpg, .jpeg, .png">
+        </div>
+        <div>
+          <label for="">
+            <input type="checkbox">Acepto los términos, condiciones y políticas.
+          </label>
+          </div>
+          <br>
+          <input type="submit" value="Registrarse">
+          <p>Ya tienes una cuenta?<a href="https://facebook.com" target="_blank"> Accede desde aquí</a></p>
+      </form>
+    </main>
 </body>
 </html>

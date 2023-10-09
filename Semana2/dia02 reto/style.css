@@ -17,12 +17,12 @@ body{
 }
 main{
     
-    width: 560px;
+    width: 650px;
     min-height: 400px;
     display: flex;
 }
 .photo{
-    width: 280px;
+    width: 350px;
     background-color: blue;
     background-image: url(./images/image-product-desktop.jpg);
     background-size: cover;
@@ -83,4 +83,7 @@ main{
     border-radius: 7px;
     margin-top: 20px;
     cursor: pointer;
+}
+.content button:hover{
+    background-color: hsl(158, 52%, 20%);
 }
