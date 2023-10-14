@@ -52,7 +52,6 @@ img{
     /*TODO: Adaptar el ancho de la pagina a dispositivos móviles*/
 }
 .header{
-    border: 1px solid red;
     font-family: var(--font-primary);
     margin: 0 auto;
     display: flex;
@@ -67,12 +66,18 @@ img{
     gap: 3rem;/*1rem =14px*/
 }
 .hero{
-    border: 1px solid red;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 2rem;
+
     padding-top: 3rem;
+    padding-bottom: 12rem;
+    
+    background: url(../images/bg-curvy-desktop.svg);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: contain;
 }
 .hero__title{
     width: 720px;
@@ -109,5 +114,18 @@ img{
     justify-content: center;
     gap: 5rem;
     background-color: var(--primary-dark-blue-main);
-
+}
+.feature{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.feature__title{
+    font-family: var(--font-primary);
+    /*margin-bottom: 1.3rem;*/
+}
+.feature__text{
+    font-family: var();
+    text-align: center;
+    /*margin-top: 1rem;*/
 }
