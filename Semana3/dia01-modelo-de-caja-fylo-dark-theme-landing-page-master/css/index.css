@@ -45,11 +45,14 @@ a{
     text-decoration: none;
 }
 img{
+    max-width: 100%;
+    height: auto;
     /*TODO: RWD para imagenes*/
 }
 .wrapper{
-    width: 1440px;
+    /*width: 1440px;*/
     /*TODO: Adaptar el ancho de la pagina a dispositivos móviles*/
+    width: min(100% -3rem 1440px);
 }
 .header{
     font-family: var(--font-primary);
@@ -80,18 +83,25 @@ img{
     background-size: contain;
 }
 .hero__title{
-    width: 720px;
+    /*width: 720px*/
+    width: min(100% -3rem 720px);
     font-family:  var(--font-primary);
     font-weight:  var(--font-weight-bold);
     font-size: 2.5rem;
     text-align: center;
 }
 .hero__text{
-    width: 720px;
+    /*width: 720px;*/
+    width: min(100% -3rem 720px);
     font-family: var(--font-secondary);
     font-size: 1.2rem;
     padding: 0 7rem;
     text-align: center;
+}
+@media (max-width: 768px){
+    .hero__text{
+        padding: 0;;
+    }
 }
 .hero__button{
     font-family: var(--font-primary);
@@ -115,6 +125,13 @@ img{
     gap: 5rem;
     background-color: var(--primary-dark-blue-main);
 }
+
+@media (max-width: 768px){
+    .features{
+        grid-template-columns:340px;
+    }
+}
+
 .feature{
     display: flex;
     flex-direction: column;
@@ -137,6 +154,14 @@ img{
     background-color: var(--primary-dark-blue-main);
     padding: 8rem;
 }
+
+@media (max-width: 768px){
+    .collaboration{
+        flex-direction: column;
+    }
+}
+
+
 .how_works{
     display: flex;
     flex-direction: column;
@@ -168,6 +193,8 @@ img{
     gap: 2rem;
     justify-content: center;
     background-color: var(--primary-dark-blue-main);
+    padding: 8rem;
+    padding-bottom: 18rem;
 }
 .testimonial{
     background-color: var(--primary-dark-blue-testimonials);
@@ -207,12 +234,21 @@ img{
     flex-direction: column;
     align-items: center;
     gap: 1.5rem;
+
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%,-50%);
 }
 .early-access h2{
     font-size: 2rem;
 }
 .early-access p{
     text-align: center;
+}
+.early-access form{
+    display: flex;
+    gap: 2rem;
 }
 
 .early-access input[type=text] {
@@ -240,6 +276,7 @@ img{
     font-family: var(--font-primary);
     background-color: var(--primary-dark-blue-footer);
     padding: 15rem 0 5rem 0;
+    position: relative;
 }
 .footer--wrapper{
     display: flex;
@@ -252,7 +289,15 @@ img{
 .footer-info{
     display: flex;
     gap: 4rem;
+    width: 100%;
+    justify-content: space-between;
 }
+@media (max-width: 768px){
+    .footer-info{
+        flex-direction: column;
+    }
+}
+
 .footer-info__description{
     width: 22rem;
     display: flex;
