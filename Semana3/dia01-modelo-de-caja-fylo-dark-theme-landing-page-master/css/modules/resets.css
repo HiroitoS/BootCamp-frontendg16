@@ -1,0 +1,6 @@
+/*Creando RESETS*/
+* {
+    /*Todos los elementos  */
+    box-sizing: border-box;
+    margin: 0;
+}
