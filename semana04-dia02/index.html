@@ -8,8 +8,11 @@
 </head>
 <body>
   <header class="header">
-    <img class="header__menu" src="./images/icon-menu.svg" alt="">
-    <img class="header__logo" src="./images/logo.svg" alt="">
+    <div class="header_wrapper">
+      <img class="header__menu" src="./images/icon-menu.svg" alt="">
+      <img class="header__logo" src="./images/logo.svg" alt="">
+    </div>
+    
     <nav style="display: none;">
       Collections
       Men
@@ -17,15 +20,23 @@
       About
       Contact
     </nav>
-    <img class="header__cart" src="./images/icon-cart.svg" alt="">
-    <img class="header__avatar" src="./images/image-avatar.png" alt="">
+    <div class="header_wrapper">
+      <img class="header__cart" src="./images/icon-cart.svg" alt="" >
+      <img class="header__avatar" src="./images/image-avatar.png" alt="" width="32" height="32">
+    </div>
+    
   </header>
 
   <main>
-    <section class="galery">
-      <img src="./images/icon-plus.svg" alt="">
+    <section class="gallery">
+      <div class="gallery__prev">
+        <img src="./images/icon-previous.svg" alt="">
+      </div>
       <img src="./images/image-product-1.jpg" alt="">
-      <img src="./images/icon-next.svg" alt="">
+      <div class="gallery__next">
+        <img src="./images/icon-next.svg" alt="">
+      </div>
+      
     </section>
 
     <section class="product">
@@ -38,16 +49,20 @@
       
       <div class="product__price">
         <div>
-          <span class="product__price">$125.00</span>
+          <span class="product__amount">$125.00</span>
           <span class="product__discount">50%</span>
         </div>
         <span class="product__price-with-discount">$250.00</span>
       </div>
       
       <div class="product__qty">
-        <button>-</button>
+        <button>
+          <img src="./images/icon-minus.svg" alt="">
+        </button>
         <span>0</span>
-        <button>+</button>
+        <button>
+          <img src="./images/icon-plus.svg" alt="">
+        </button>
       </div>
 
       <button class="product__add-to-cart">Add to cart</button>
