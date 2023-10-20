@@ -1,5 +1,5 @@
 .wrapper{
     /*width: 1440px;*/
     /*TODO: Adaptar el ancho de la pagina a dispositivos móviles*/
-    width: min(100% -3rem, 1440px);
+    width: min(100% - 3rem, 1440px);
 }
