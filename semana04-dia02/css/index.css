@@ -146,10 +146,34 @@ img{
     height: 3rem;
     border: 0;
     background-color: var(--neutral-ligth-grayish-blue);
+    border: none;
 
 }
 .product__qty span{
     font-size: 1.2rem;
     font-weight: var(--font-weigth-bold);
     background-color: var(--neutral-ligth-grayish-blue);
+}
+.product__add-to-cart{
+    margin-top: 1rem;
+    width: 100%;
+    border: none;
+    padding: 1.5rem 1rem;
+    background-color: red;
+    border-radius: .8rem;
+
+    background-color: var(--primary-orange);
+    color: var(--neutral-White);
+    font-size: 1.1rem;
+    font-weight: var(--font-weigth-bold);
+    cursor: pointer;
+
+    box-shadow: 0px 10px 30px var(--primary-orange);
+
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+.product__add-to-cart svg path{
+    fill: var(--neutral-White);
 }
