@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+/*font-family: 'Kumbh Sans', sans-serif;*/
+
+
+/*576px --> pantallas pequeñas celulares
+768px--> tablets
+992px --> desktop
+1200 --> desktops tv*/
+:root{
+    --font-primary:'Kumbh Sans', sans-serif;
+    --font-size: 16px;
+    --font-weigth-regular: 400;
+    --font-weigth-bold: 700;
+
+    /*COLORS*/
+
+    --primary-orange: hsl(26, 100%, 55%);
+    --primary-pale-orange: hsl(25, 100%, 94%);
+
+    --neutral-very-dark-blue: hsl(220, 13%, 13%);
+    --neutral-dark-grayish-blue: hsl(219, 9%, 45%);
+    --neutral-Grayish-blue: hsl(220, 14%, 75%);
+    --neutral-ligth-grayish-blue: hsl(223, 64%, 98%);
+
+    --neutral-White: hsl(0, 0%, 100%);
+    --neutral-black: hsl(0, 0%, 0%);
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+html{
+    font-size: var(--font-size);
+}
+body{
+    font-family: var(--font-primary);
+}
+img{
+    /*RWD para imagenes*/
+    max-width: 100%;
+    height: auto;
+}
+.wrapper{
+    width: min(100% -  3rem, 1200px);
+    border:1px solid red;
+
+    margin: 0 auto;
+}
+.flex{
+    display: flex;
+}
+.header{
+    
+    height: 4.5rem;/*72 / 16*/
+
+    justify-content: space-between;
+    align-items: center;
+    padding: 2.5rem;
+    }
+
+.header_wrapper{
+    display: flex;
+    align-items: center;
+    gap: 0.5;
+}
+.product-detail{
+    padding: 5rem 3rem;
+    
+    gap: 5rem;
+}
+.gallery{
+    position: relative;
+}
+.gallery__prev,
+.gallery__next{
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: var(--neutral-White);
+    cursor: pointer;
+}
+.gallery__prev{
+    position: absolute;
+    top: 50%;
+    left: 2rem;
+}
+.gallery__next{
+    position: absolute;
+    top: 50%;
+    right: 2rem;
+    bottom: 150px;    
+}
+.product{
+    padding: 1.5rem;
+}
+.product__subtitle{
+    font-size: 1rem;
+    font-weight: var(--font-weigth-bold);
+    text-transform: uppercase;
+    color: var(--primary-orange);
+
+}
+.product__title{
+    margin-top: 1rem;
+    font-size: 2.1rem;
+    font-weight: var(--font-weigth-bold);
+    color: var(--neutral-very-dark-blue);
+
+}
+.product__description{
+    margin-top: 1rem;
+   color: var(--neutral-dark-grayish-blue);
+}
+.product__price{
+    margin-top: 1rem;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.product__wrapper{
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+.product__amount{
+    font-size: 2rem;
+    font-weight: var(--font-weigth-bold);
+}
+.product__discount{
+    background-color: var(--primary-pale-orange);
+    color: var(--primary-orange);
+
+    padding: .3rem .5rem;
+    border-radius: .5rem;
+
+    font-weight: var(--font-weigth-bold);
+}
+.product__price-with-discount{
+    font-size: 1.1rem;
+
+    color: var(--neutral-dark-grayish-blue);
+    text-decoration: line-through;
+
+}
+.product__qty{
+    margin-top: 1rem;
+    width: 100%;
+   
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: stretch;
+
+    background-color: var(--neutral-ligth-grayish-blue);
+
+}
+.product__qty button{
+    width: 3rem;
+    height: 3rem;
+    border: 0;
+    background-color: var(--neutral-ligth-grayish-blue);
+    border: none;
+
+}
+.product__qty span{
+    font-size: 1.2rem;
+    font-weight: var(--font-weigth-bold);
+    background-color: var(--neutral-ligth-grayish-blue);
+}
+.product__add-to-cart{
+    margin-top: 1rem;
+    width: 100%;
+    border: none;
+    padding: 1.5rem 1rem;
+    background-color: red;
+    border-radius: .8rem;
+
+    background-color: var(--primary-orange);
+    color: var(--neutral-White);
+    font-size: 1.1rem;
+    font-weight: var(--font-weigth-bold);
+    cursor: pointer;
+
+    box-shadow: 0px 10px 30px var(--primary-orange);
+
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+.product__add-to-cart svg path{
+    fill: var(--neutral-White);
+}
