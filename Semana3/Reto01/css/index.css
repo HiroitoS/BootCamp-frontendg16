@@ -5,7 +5,7 @@ font-family: 'Raleway', sans-serif;*/
     /*Fonts*/
     --font-primary: 'Raleway', sans-serif;
     --font-secondary: 'Open Sans', sans-serif;
-    --font-size: 16px;
+    --font-size: 14px;
     --font-weigth-regular: 400;
     --font-weigth-bold: 700;
 
@@ -42,21 +42,74 @@ img{
     height: auto;
 }
 .wrapper{
-   padding-left: 100px;
-    width: min(100% -3rem 1440px);
+    
+    width: min(100% - 3rem, 1440px);
 }
 .header{
+    
     font-family: var(--font-primary);
     display: flex;
     margin: 0 auto;
     justify-content: space-between;
-    margin-top: 2rem;
+    margin-top: 3rem;
+    
 }
 .header__nav{
     list-style: none;
     display: flex;
     padding: 10px;
-    margin-right: 100px;
+    margin: 10px;
     gap: 3rem;
+}
+.files{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--neutral-Light-Grayish-Blue);
+    gap: 4rem;
+    padding: 5rem 10rem;
+}
 
+.letter_files{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    
+}
+.files__title{
+    font-family: var(--font-primary);
+    font-weight: var(--font-weigth-bold);
+    font-size: 4rem;
+    color: var(--primary-Very-Dark-Blue);
+}
+.files__text{
+    font-family: var(--font-secondary);
+    font-size: 1.5rem;
+    color: var(--Desaturated-Blue);
+}
+.file__form{
+   display: flex;
+   width: 100%;
+   align-items: center;
+   gap: 2rem;
+}
+.files input[type=email]{
+    border-radius: .2rem;
+    font-family: var(--font-secondary);
+    padding: 1rem 2rem;
+    width: min(100%, 30rem);
+    opacity:.3;
+    font-size: 1rem;
+    border: solid 1px;
+}
+.files input[type=submit]{
+    color: var(--neutral-Light-Grayish-Blue);
+    background-color: var(--accent-Bright-Blue);
+    font-family: var(--font-primary);
+    font-weight: var(--font-weigth-bold);
+    border-radius: .2rem;
+    padding: 1rem 2rem;
+    width: min(100%, 15rem);
+    border: none;
 }
