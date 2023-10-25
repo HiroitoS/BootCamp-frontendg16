@@ -45,10 +45,11 @@ img{
     
 }
 .header{
-    
+
+    width: min(100% - 20rem, 1440px);
     font-family: var(--font-primary);
-    width: min(100% - 1rem, 1220px);
-    margin: 10rem;
+    
+    margin: 0 auto;
     display: flex;    
     justify-content: space-between;
     margin-top: 3rem;
@@ -59,7 +60,10 @@ img{
     display: flex;
     padding: 10px;
     margin: 10px;
-    gap: 3rem;
+    gap: 2.5rem;
+}
+.header__logo{
+    width: 176px;
 }
 .files{
 
@@ -67,34 +71,36 @@ img{
     align-items: center;
     justify-content: center; 
     background-color: var(--neutral-Light-Grayish-Blue);
-    /* width: 1440px;
-    margin: 0 auto; */
-    margin: 10rem; 
-    gap: 3.3rem;
+    margin: 0 auto;
+    gap: 10rem;
+    margin-top: 3rem;
 }
-.files__image{
-    width: 550px;
-  
+.file__img{
+
+    width: 500px;
+    
     
 }
 .letter_files{
     display: flex;
     flex-direction: column;
-    align-items: center;
-    gap: 2rem;
-    width: min(100% - 3rem, 80rem);
+    
+    
+    gap: 1rem;
+    width: min(100% - 3rem, 550px);
 }
 .files__title{
     font-family: var(--font-primary);
     font-weight: var(--font-weigth-bold);
-    font-size: 3rem;
+    font-size: 2.5rem;
+    line-height:4rem;
     color: var(--primary-Very-Dark-Blue);
 }
 .files__text{
     font-family: var(--font-secondary);
-    font-size: 1.5rem;
+    font-size: 1rem;
     color: var(--Desaturated-Blue);
-    padding-right: 3.5rem; 
+    /* padding-right: 3.5rem;  */
 }
 .file__form{
    display: flex;
@@ -106,7 +112,7 @@ img{
     border-radius: .2rem;
     font-family: var(--font-secondary);
     padding: 1rem 2rem;
-    width: min(100%, 30rem);
+    width: min(100%, 25rem);
     opacity:.3;
     font-size: 1rem;
     border: solid 1px;
@@ -119,6 +125,7 @@ img{
     border-radius: .2rem;
     padding: 1rem 2rem;
     width: min(100%, 15rem);
+    height: 3.5rem;
     border: none;
 }
 .productive{
