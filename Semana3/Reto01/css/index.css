@@ -32,6 +32,7 @@ html{
 }
 body{
     background-color: var(--neutral-Light-Grayish-Blue);
+    position: relative;
 }
 a{
     color: inherit;
@@ -39,17 +40,16 @@ a{
 }
 img{
     max-width: 100%;
-    height: auto;
-}
-.wrapper{
     
-    width: min(100% - 3rem, 1440px);
+    height: auto;
+    
 }
 .header{
     
     font-family: var(--font-primary);
-    display: flex;
-    margin: 0 auto;
+    width: min(100% - 1rem, 1220px);
+    margin: 10rem;
+    display: flex;    
     justify-content: space-between;
     margin-top: 3rem;
     
@@ -62,37 +62,45 @@ img{
     gap: 3rem;
 }
 .files{
+
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: center; 
     background-color: var(--neutral-Light-Grayish-Blue);
-    gap: 4rem;
-    padding: 5rem 10rem;
+    /* width: 1440px;
+    margin: 0 auto; */
+    margin: 10rem; 
+    gap: 3.3rem;
 }
-
+.files__image{
+    width: 550px;
+  
+    
+}
 .letter_files{
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 1.5rem;
-    
+    gap: 2rem;
+    width: min(100% - 3rem, 80rem);
 }
 .files__title{
     font-family: var(--font-primary);
     font-weight: var(--font-weigth-bold);
-    font-size: 4rem;
+    font-size: 3rem;
     color: var(--primary-Very-Dark-Blue);
 }
 .files__text{
     font-family: var(--font-secondary);
     font-size: 1.5rem;
     color: var(--Desaturated-Blue);
+    padding-right: 3.5rem; 
 }
 .file__form{
    display: flex;
    width: 100%;
    align-items: center;
-   gap: 2rem;
+   gap: 1rem;
 }
 .files input[type=email]{
     border-radius: .2rem;
@@ -112,4 +120,36 @@ img{
     padding: 1rem 2rem;
     width: min(100%, 15rem);
     border: none;
+}
+.productive{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    width: 1440px;
+    margin: 0 auto;
+    gap: 4rem;
+    padding-top: 8rem;
+    
+}
+.productive__image{
+    object-fit:contain;
+    width: 100%;
+    padding-top: 3rem;
+}
+.productive__wrappe{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.productive__title{
+    font-family: var(--font-primary);
+    font-weight: var(--font-weigth-bold);
+    font-size: 3.1rem;
+    color: var(--primary-Very-Dark-Blue);
+    padding-bottom: 2rem;
+}
+.productive__text{
+    font-family: var(--font-secondary);
+    font-size: 1rem;
+    color: var(--Desaturated-Blue);
 }
