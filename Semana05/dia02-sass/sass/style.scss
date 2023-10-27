@@ -1,0 +1,12 @@
+@import 'variables';
+@import 'card';
+@import 'mixsins';
+// CSS: --primary-color: #FFA559;
+
+body{
+    background-color: $primary-color;
+    /*CSS:background-color: var(--primary-color);*/
+    // color: white;
+    text-align: center;
+}
+
